@@ -1,0 +1,82 @@
+@import url("https://use.typekit.net/khm8ylu.css");
+
+.custom-tab::part(base){
+    
+    font-size: 1.5em;
+    font-family: economica,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color : var(--secondary-text);
+}
+
+.custom-tab::part(base):hover {
+    color: var(--primary-color);
+}
+
+.custom-tab::part(base):active {
+    color: var(--primary-color);
+    
+}
+
+.custom-tab::part(base):focus {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.custom-tab-group::part(base){
+}
+.custom-tab-group::part(tabs) {
+    color: var(--primary-color);
+    padding-left: 4em;
+}
+@media only screen and (max-width: 768px) {
+    .custom-tab-group::part(tabs) {
+        padding-left: 1em;
+    }
+}
+
+.custom-tab-group::part(active-tab-indicator){
+    border-bottom: solid 2px var(--sl-color-primary-500);
+    margin-left: -4em;
+}
+
+.custom-tab-group::part(tabs){
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    transition: margin 100ms linear;
+    background-color: var(--secondary-color-transparent);
+    margin-top: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+    .custom-tab-group::part(tabs){
+        transition: visibility 0.5s, opacity 100ms linear;
+        margin-top: 0px;
+    }
+}
+
+
+.custom-tab-group-scroll::part(tabs){
+    background-color: var(--secondary-color-transparent);
+    transition: visibility 0.5s, opacity 0.5s linear;
+    transition: margin 100ms linear;
+    margin-top: 0;
+}
+@media only screen and (max-width: 768px) {
+    .custom-tab-group-scroll::part(tabs){
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 100ms, opacity 100ms linear;
+    }
+}
+
+/* TODO ezt valahogy % ban kozepre igazitani*/
+.max-height-panel {
+    margin-top: 15em;
+}
+
+.custom-tab-panel::part(base){
+    padding: 0px;
+}

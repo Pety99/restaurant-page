@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700;800&display=swap');
+html{
+    height: 100%;
+}
+body {
+    background-color: black;
+    color: white;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: ambroise-std;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+p{
+    font-size: 1.5em;
+}
+
+/* This class hides the scrollbar */
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+#content{
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.flex-table{
+    height: 95%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background{
+    height: 100%;
+    background-image: url('/assets/pizza-oil.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+
+}
+
+.filter{
+    background-color: rgba(180,180,180);
+    backdrop-filter: blur(2px);
+}
+
+.title{
+    font-size: 6em;
+    margin:0.2em;
+    margin-bottom: 1em;
+}
+
+.subtitle{
+    font-size: 2em;
+    font-weight:100;
+    margin: 0.2em;
+}
+
+.custom-icon::part(base){
+    font-size: 3em;
+    color: var(--secondary-text);
+}
+
+.custom-icon::part(base):hover{
+    color: var(--secondary-color);
+}
+

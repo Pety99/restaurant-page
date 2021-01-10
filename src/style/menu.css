@@ -1,0 +1,66 @@
+  .bg > h1{
+    font-size: 78px;
+    text-transform: uppercase;
+    font-family: economica,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  @media only screen and (max-width: 768px) {
+    .bg1 > h1{
+      margin-top: 35vh;
+    }
+  }
+  .bg1::after {
+    background-image: url('/assets/pizza-2.jpg');
+  }
+  
+  .bg2::after {
+    background-image: url('/assets/pizza-white.jpg');
+   
+  }
+
+  .bg3::after{
+    background-image: url('/assets/pizza-fire.jpg');
+    height: 120%;
+    background-position: center;
+  }
+
+  .recipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    margin: 0 1em 0 1em;
+  }
+
+.recipe > h2{
+  color: var(--secondary-text);
+  font-size: 1.5em;
+}
+
+.recipe > p{
+  color: var(--secondary-text);
+  font-size: 20px;
+}
+  @media only screen and (max-width: 768px) {
+    .recipe{
+      width: 80%;
+      height: 25%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .recipe > h2{
+      color: var(--secondary-text);
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+  
+    .recipe > p{
+      color: var(--secondary-text);
+      font-size: 14px;
+      margin-top: 0.2em;
+    }
+  }

@@ -1,0 +1,18 @@
+:root {
+    /* Changes the primary color palette to purple */
+    --sl-color-primary-50: #fbe6ea !important;
+    --sl-color-primary-100: #f4b4bf !important;
+    --sl-color-primary-200: #ec8294 !important;
+    --sl-color-primary-300: #e44f69 !important;
+    --sl-color-primary-400: #dd1d3e !important;
+    --sl-color-primary-500: #d90429 !important;
+    --sl-color-primary-600: #ae0321 !important;
+    --sl-color-primary-700: #820219 !important;
+    --sl-color-primary-800: #570210 !important;
+    --sl-color-primary-900: #2b0108 !important;
+
+    --secondary-color: #f1e8e6;
+    --primary-color: #f55951;
+    --secondary-text: #0c0c0c;
+    --secondary-color-transparent: #ffffffcc;
+  }
