@@ -12,7 +12,11 @@
     --sl-color-primary-900: #2b0108 !important;
 
     --secondary-color: #f1e8e6;
-    --primary-color: #f55951;
+    --tertiary-color:#dcc3c3;
+    --primary-color: #543c52;
     --secondary-text: #0c0c0c;
     --secondary-color-transparent: #ffffffcc;
+  }
+  #section3{
+    height: 10vh;
   }

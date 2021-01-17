@@ -10,6 +10,43 @@
     background-blend-mode: multiply;
     background-position: center;
 }
+section.home {
+    height: 20vh;
+    align-items: center;
+}
+
+#delivery-title{
+    font-size: 3em;
+}
+
+
+button.home{
+    width: 8em;
+    height: 8em;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2em;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+    width: 20em;
+}
+@media only screen and (max-width: 768px) {
+    button.home{
+        width: 5em;
+        height: 5em;
+        border-radius: 1.25em;
+        z-index: 1;
+    }  
+    .buttons-container{
+        width: 12em;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     #main h1{

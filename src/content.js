@@ -1,3 +1,6 @@
+import { SlButtonGroup } from "@shoelace-style/shoelace";
+import SectionBuilder from './components/section';
+
 /**
  * uses pageName-container as id so that every container can be distinguished.
  * @param {String} pageName 
@@ -10,42 +13,14 @@ const createContainer = function (pageName) {
     return container;
 }
 
-const createSection = function(id, title, text) {
-    const section = document.createElement('section');
-    section.classList.add('section', 'static');
-    if(id){
-        section.id = id;
-    }
-    if(title){
-        const h1 = document.createElement('h1');
-        h1.textContent = title;
-        section.appendChild(h1);
-    }
-    if(text) {
-        const p = document.createElement('p');
-        p.textContent = text;
-        section.appendChild(p);
-    }
-    return section;
-}
+const createFooter = function(AboveSectionColor){
 
+    const sectionBuilder = new SectionBuilder();
+    const footerTopWave = sectionBuilder.addBackgroundColor('#543c52').addWave().build().getSection();
+    footerTopWave.classList.add('footerWave');
+    
 
-const createImage = function(backgorundID, title, link) {
-    const section = document.createElement('section');
-    section.classList.add('section', 'parallax', `${backgorundID}`, 'bg');
-    if(title){
-        const h1 = document.createElement('h1');
-        h1.textContent = title;
-        section.appendChild(h1);
-    }
-    if(link){
-        section.setAttribute('data-link', `${link}`);
-    }
-    return section;
-}
-
-const createFooter = function(){
-    const footer = document.createElement('section');
+    const footer = sectionBuilder.addBackgroundColor('#543c52').build().getSection();
     footer.classList.add('footer');
 
     const icon = document.createElement('sl-icon-button');
@@ -56,22 +31,29 @@ const createFooter = function(){
         location.href = 'https://github.com/Pety99';
     }
 
-    const name = document.createElement('p');
+    const name = document.createElement('h2');
     name.textContent = 'Created by Peter Abordan';
+
+    const copyright = document.createElement('p');
+    copyright.textContent = `L'Arte Della Pizza © ${new Date().getFullYear()} | All Rights Reserved`;
 
     footer.appendChild(icon);
     footer.appendChild(name);
+    footer.appendChild(copyright);
 
-    return footer
+    return [footerTopWave, footer];
 }
 
-const addContentToContainer = function(content, container){
-    container.appendChild(content);
-} 
+const createImageButton = function(page, file, listener){
+    const button = document.createElement('button');
+    button.onclick = listener;
+    button.classList.add(`${page}`);
+    button.style.backgroundImage = `url(${file})`;
+    return button;
+}
 
 export default {
     createContainer,
-    createSection,
-    createImage,
     createFooter,
+    createImageButton
 }

@@ -1,0 +1,181 @@
+.bg{
+    align-items: center;
+    align-content: normal;
+}
+
+.bg> h1{
+    white-space: pre;
+    font-size: 8em;
+    font-weight: 600;
+    margin: 0.2em;
+}
+@media only screen and (max-width: 768px) {
+    .bg> h1{
+        font-size: 4em;
+    }
+    .bg.top> .wave-container {
+        height: auto;
+    }
+    .bg.top> .wave-container > h1 {
+        margin-top: -2em;
+    }
+}
+.bg.left{
+    justify-content: flex-start;
+}
+.bg.left> h1{
+    text-align: left;
+}
+.bg.left> .wave-container{
+    margin-left: calc(22px + 3.6em);
+}
+.bg.center> h1{
+    text-align: right;
+}
+.bg.right{
+    justify-content: flex-end;
+}
+.bg.right> h1{
+    text-align: right;
+}
+.bg.right> .wave-container{
+    margin-right: calc(22px + 3.6em);
+}
+.bg.top{
+    align-content: flex-start;
+}
+.bg.top> .wave-container{
+    align-self: flex-start;
+}
+.bg.bottom{
+    align-content: flex-end;
+}
+.bg.bottom> .wave-container{
+    align-self: flex-end;
+}
+
+.section:not(.bg){
+    background-color: var(--tertiary-color);
+}
+
+.wave-container{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 22px - 3.6em);
+    width: 40%;
+    max-width: 450px;
+    background-color: var(--secondary-color);
+    align-self: flex-end;
+    font-family: ambroise-std;
+}
+.wave-container h1,p{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.wave-container h1{
+    margin-top: 3em;
+    font-family: economica,sans-serif;
+    font-size: 3em;
+    margin-left: 1em;
+    margin-top: 1.8em;
+    margin-bottom: 0;
+}
+.wave-container p{
+    font-size: 1.5em;
+}
+@media only screen and (max-width: 768px) {
+    .wave-container{
+        width: 100%;
+        height: auto;
+    }
+    .bg.left> .wave-container {
+        margin-left: 0;
+    }
+    .bg.right> .wave-container {
+        margin-right: 0;
+    }
+    
+    .wave-container h1,p{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .wave-container h1{
+        margin-top: 1.5em;
+        font-size: 1.5em;
+        margin-left: 0.75em;
+        margin-top: 0.9em;
+        margin-bottom: 0;
+    }
+    .wave-container h1:not(.center-animation){
+        transform: translateX(0%);
+        transition: transform ease-out 100ms;
+    }
+    .wave-container p{
+        font-size: 1em;
+    }
+    .center-animation{
+        transform: translateX(50%);
+        transition: transform ease-out 100ms;
+    }
+}
+@media only screen and (max-width: 1536px) {
+    
+    .wave-container h1,p{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .wave-container h1{
+        margin-top: 1.5em;
+        font-size: 1.5em;
+        margin-left: 0.75em;
+        margin-top: 0.9em;
+        margin-bottom: 0;
+    }
+    .wave-container p{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 1920px) {
+    
+    .wave-container h1,p{
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 4em;
+    }
+    .wave-container h1{
+        margin-top: 1.5em;
+        font-size: 1.5em;
+        margin-left: 0.75em;
+        margin-top: 0.9em;
+        margin-bottom: 0;
+    }
+    .wave-container p{
+        font-size: 1.2em;
+    }
+}
+
+.bg.bottom> .wave-container> svg{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: -1px;
+}
+.bg.full-height> .wave-container{
+    justify-content: space-between;
+}
+.bg.full-height> .wave-container> svg{
+    width: 100%;
+    margin-bottom: -1px;
+    margin-top: -1px
+}
+.bg.top> .wave-container{
+    justify-content: flex-start;
+}
+.bg.top> .wave-container> svg{
+    width: 100%;
+    margin-top: -1px;
+}
+.footerWave > .static.wave-container{
+    width: 100%;
+    max-width: none;
+    background-color: inherit;
+}

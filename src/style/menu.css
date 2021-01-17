@@ -26,6 +26,7 @@
   }
 
   .recipe{
+    font-family: ambroise-std;
     display: flex;
     flex-direction: column;
     justify-content: center;

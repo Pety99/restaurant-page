@@ -4,12 +4,15 @@ import './style/colors.css';
 import './style/pageContent.css'
 import './style/menu.css';
 import './style/home.css';
+import './style/about.css';
+import './style/section.css'
 import '/assets/pizza-oil.jpg';
 import '@shoelace-style/shoelace/dist/shoelace/shoelace.css';
 import { setAssetPath, SlTab, SlTabPanel, SlTabGroup, SlIcon, SlIconButton} from '@shoelace-style/shoelace';
 import allPages from './pages';
 import homeView from './pages/home';
 import menuView from './pages/menu';
+import aboutView from './pages/about'
 
 setAssetPath(document.currentScript.src);
 customElements.define('sl-tab', SlTab);
@@ -22,3 +25,4 @@ allPages.loadBackground('pizza-oil.jpg');
 allPages.loadTabs();
 homeView.loadPage();
 menuView.loadPage();
+aboutView.loadPage();

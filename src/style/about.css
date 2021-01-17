@@ -1,0 +1,8 @@
+.bg4::after{
+    background-image: url(/assets/pizza-eat.jpg);
+    background-position: bottom;
+}
+.bg5::after{
+    background-image: url(/assets/pizza-3.jpg);
+    background-position: bottom;
+}

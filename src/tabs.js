@@ -72,12 +72,19 @@ const stylePanel = function(panel){
  */
 const changeTabBackgorundOnScroll = function(panel){
     const tabs = document.querySelector('sl-tab-group');
+    const titles = Array.from(document.querySelectorAll('.wave-container > h1'));
     panel.onscroll = () =>{
         if(panel.scrollTop <= 10){  // Scroll is close to the top
             tabs.classList.remove('custom-tab-group-scroll');
+            titles.forEach(title => {
+                title.classList.add('center-animation');
+            });
         } 
         else if(!Array.from(tabs.classList).includes('custom-tab-group-scroll')){
             tabs.classList.add('custom-tab-group-scroll');
+            titles.forEach(title => {
+                title.classList.remove('center-animation');
+            });
         }
     }
 }
