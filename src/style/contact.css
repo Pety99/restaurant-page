@@ -1,0 +1,44 @@
+#map {
+    width: 100%;
+    height: calc(50vh + 50px);
+}
+
+.info h1, p {
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 2em;
+}
+.info p {
+    font-size: 1.4em;
+}
+p.aside {
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 768px) {
+    .info h1 {
+        font-size: 1.7em;
+    }
+    .info p {
+        font-size: 1.2em;
+    }
+    p.aside {
+        font-size: 1em;
+    }
+}
+
+.info {
+    min-width: 320px;
+    margin-top: 30px;
+}
+
+section.section.static.contact {
+    height: auto;
+    min-height: unset;
+}
+.bg6::after{
+    background-image: url(/assets/pizza-4.jpg);
+    background-position: bottom;
+}

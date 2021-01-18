@@ -1,4 +1,4 @@
-.home-page{
+.home-page {
     height: var(--full-page-height);
 }
 
@@ -10,17 +10,21 @@
     background-blend-mode: multiply;
     background-position: center;
 }
+
 section.home {
     height: 20vh;
     align-items: center;
 }
 
-#delivery-title{
+section.section.static.home {
+    min-height: 25vh;
+}
+
+#delivery-title {
     font-size: 3em;
 }
 
-
-button.home{
+button.home {
     width: 8em;
     height: 8em;
     background: transparent;
@@ -31,35 +35,37 @@ button.home{
     background-size: cover;
     border-radius: 2em;
 }
-.buttons-container{
+
+.buttons-container {
     display: flex;
     justify-content: space-around;
     width: 20em;
 }
+
 @media only screen and (max-width: 768px) {
-    button.home{
+    button.home {
         width: 5em;
         height: 5em;
         border-radius: 1.25em;
         z-index: 1;
-    }  
-    .buttons-container{
+    }
+    .buttons-container {
         width: 12em;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #main h1{
+    #main h1 {
         margin-top: 70%;
         margin-bottom: 10%;
     }
-    h2{
+    h2 {
         text-align: center;
     }
-    .subtitle{
+    .subtitle {
         font-size: 1.5em;
     }
-    .title{
+    .title {
         font-size: 5em;
     }
 }

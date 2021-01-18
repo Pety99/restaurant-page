@@ -5,6 +5,7 @@ import './style/pageContent.css'
 import './style/menu.css';
 import './style/home.css';
 import './style/about.css';
+import './style/contact.css';
 import './style/section.css'
 import '/assets/pizza-oil.jpg';
 import '@shoelace-style/shoelace/dist/shoelace/shoelace.css';
@@ -13,6 +14,7 @@ import allPages from './pages';
 import homeView from './pages/home';
 import menuView from './pages/menu';
 import aboutView from './pages/about'
+import contactView from './pages/contact'
 
 setAssetPath(document.currentScript.src);
 customElements.define('sl-tab', SlTab);
@@ -26,3 +28,4 @@ allPages.loadTabs();
 homeView.loadPage();
 menuView.loadPage();
 aboutView.loadPage();
+contactView.loadPage();

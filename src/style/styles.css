@@ -3,7 +3,7 @@ html{
     height: 100%;
 }
 body {
-    background-color: black;
+    background-color: var(--primary-color);
     color: white;
     /*font-family: 'Raleway', sans-serif;*/
     font-family: economica,sans-serif;
@@ -41,7 +41,6 @@ p{
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
-
 }
 
 .filter{

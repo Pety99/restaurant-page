@@ -4,10 +4,21 @@
 }
 
 .bg> h1{
+    transition: all 0.5s ease;
     white-space: pre;
     font-size: 8em;
     font-weight: 600;
     margin: 0.2em;
+}
+section.section.static{
+    height: auto;
+    min-height: 50vh;
+}
+section.section.static > div:not(.recipe,.info) > h1{
+    font-size: 3em;
+}
+section.section.static > div:not(.recipe,.info) > p{
+    font-size: 1.7em;
 }
 @media only screen and (max-width: 768px) {
     .bg> h1{
@@ -18,6 +29,9 @@
     }
     .bg.top> .wave-container > h1 {
         margin-top: -2em;
+    }
+    section.section.parallax.about {
+        height: auto;
     }
 }
 .bg.left{
@@ -69,6 +83,7 @@
     font-family: ambroise-std;
 }
 .wave-container h1,p{
+    max-width: 1024px;
     margin-left: 2em;
     margin-right: 2em;
 }
@@ -117,6 +132,9 @@
         transform: translateX(50%);
         transition: transform ease-out 100ms;
     }
+    section.section.parallax.bg.bg5.left.top {
+        height: 70vh;
+    }
 }
 @media only screen and (max-width: 1536px) {
     
@@ -144,13 +162,13 @@
     }
     .wave-container h1{
         margin-top: 1.5em;
-        font-size: 1.5em;
+        font-size: 1.7em;
         margin-left: 0.75em;
         margin-top: 0.9em;
         margin-bottom: 0;
     }
     .wave-container p{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 }
 

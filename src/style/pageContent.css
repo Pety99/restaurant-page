@@ -42,7 +42,7 @@
   
     .footer  > * {
       margin: 1.5em;
-      color: var(--secondary-text);
+      color: var(--secondary-color);
     }
     
     @media only screen and (max-width: 768px) {
