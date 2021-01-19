@@ -1,6 +1,6 @@
 ## A website for a pizza place
 
-#### 🧪 [Live Demo](https://github.com/Pety99/restaurant-page)
+#### 🧪 [Live Demo](https://pety99.github.io/restaurant-page/)
 
 
  #### 🔔  Features
